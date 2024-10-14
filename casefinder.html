@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find My Cases - Advocate John Doe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="casefinder.js"></script>
+</head>
+<body>
+
+    <!-- Banner Section for Advocate's Name -->
+    <header class="header">
+        <div class="container">
+            <h1>Advocate John Doe</h1>
+            <p>Your Trusted Legal Advisor in Kerala, India</p>
+        </div>
+    </header>
+
+    <!-- Navigation bar for consistency with index.html -->
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="casefinder.html">My Cases</a></li> <!-- This link will stay active -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content for case finder -->
+    <main>
+        <div class="container">
+
+            <form id="caseLookupForm" class="case-lookup-form">
+                <h2>Find Your Case Updates</h2>
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="caseId">Case Reference Number:</label>
+                    <input type="text" id="caseId" name="caseId" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Find My Cases</button>
+                </div>
+            </form>
+
+            <!-- Section for showing case results dynamically -->
+            <section id="caseResultsSection" class="case-results-section hidden">
+                <h2 id="caseDetailsHeading" class="hidden">Case Details</h2>
+                
+                <!-- Add a message element for dynamic messages -->
+                <p id="caseResultsMessage"></p>
+                
+                <div id="caseResults" class="case-results">
+                    <!-- This is the element being targeted in JavaScript -->
+                    <ul id="caseUpdatesList" class="update-list">
+                        <!-- JavaScript will populate this list -->
+                    </ul>
+                </div>
+            </section>            
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Advocate John Doe. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

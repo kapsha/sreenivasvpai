@@ -1,0 +1,369 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling for Layout */
+.container {
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 15px;  /* Adjusted padding to ensure consistency */
+}
+
+/* Header Styles */
+.header {
+    background-color: #2E8B57;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #006400;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About Section Styling */
+.about-section {
+    padding: 20px 0; /* Adds space around the section */
+    background-color: #f9f9f9; /* Light background color */
+    text-align: left; /* Align content to the left */
+}
+
+.about-section h2 {
+    font-size: 2em;
+    color: #2E8B57; /* Use the green theme color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between text and image */
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    line-height: 1.7; /* Adjust the line height for better readability */
+    color: #333; /* Dark text color */
+}
+
+.about-image {
+    flex: 0.4;
+    max-width: 250px;
+}
+
+.about-image img {
+    width: 100%; /* Make the image responsive */
+    border-radius: 8px; /* Soft rounded corners */
+}
+
+/* Form and Section Alignment */
+.case-lookup-form, .case-results-section {
+    text-align: left;
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+    border-radius: 8px;
+    /* box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); */
+    margin: 30px;
+    max-width: 80%;
+}
+
+/* Section Heading Styling */
+.case-results-section h2, .case-lookup-form h2 {
+    text-align: left; /* Align headings to the left */
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #2E8B57;
+    margin-left: 0; /* Ensure headings are aligned with the form */
+}
+
+/* Form Field Group Styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Ensure labels and input fields are left-aligned */
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Button Styling */
+button[type="submit"] {
+    background-color: #2E8B57;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #006400;
+}
+
+/* Case Results Styling */
+.case-results {
+    margin-top: 20px;
+}
+
+.case-results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.case-results li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.case-results li strong {
+    color: #2E8B57;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2E8B57;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack text and image vertically on smaller screens */
+    }
+
+    .about-image {
+        margin-top: 20px; /* Add space above the image when stacked */
+        max-width: 100%; /* Ensure the image fits smaller screens */
+    }
+
+    .case-lookup-form, .case-results-section {
+        padding: 15px;
+    }
+
+    .case-results li {
+        padding: 8px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header p {
+        font-size: 1em;
+    }
+
+    button[type="submit"] {
+        width: 100%; /* Full-width button on smaller screens */
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr; /* 1 column for smaller screens */
+    }
+
+    .service-item {
+        padding: 15px;
+    }
+    .testimonial-item {
+        min-width: 250px;  /* Smaller width for mobile */
+        max-width: 250px;
+        padding: 15px;  /* Less padding for mobile */
+    }
+
+    .testimonials-carousel {
+        gap: 10px;  /* Reduce gap between items for smaller screens */
+    }    
+}
+
+@media (max-width: 480px) {
+    .testimonial-item {
+        min-width: 220px;  /* Even smaller width for very small screens */
+        max-width: 220px;
+        padding: 10px;  /* Further reduce padding */
+    }
+
+    .testimonials-carousel {
+        gap: 5px;  /* Minimize gap between items on smallest screens */
+    }
+}
+
+/* Services Section Styling */
+.services-section {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.services-section h2 {
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #2E8B57;
+}
+
+/* Grid Layout for Services */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    gap: 20px; /* Space between grid items */
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.service-item h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #2E8B57;
+}
+
+.service-item p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Testimonials Section Styling */
+.testimonials-section {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.testimonials-section h2 {
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #2E8B57;
+}
+
+.contact-section {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.contact-section h2 {
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #2E8B57;
+}
+
+/* Carousel Container for Horizontal Scrolling */
+.testimonials-carousel {
+    display: flex;
+    gap: 20px; /* Space between testimonial items */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap scrolling for better user experience */
+    padding-bottom: 20px;
+}
+
+.testimonial-item {
+    min-width: 300px;  /* Standard width for larger screens */
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start; /* Ensure smooth scroll snap */
+    text-align: left;
+}
+
+.testimonial-item p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial-item h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #2E8B57;
+}
+
+/* Hide Scrollbar for a Cleaner Look */
+.testimonials-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonials-carousel {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
