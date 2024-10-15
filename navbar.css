@@ -1,0 +1,134 @@
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Hidden by default on larger screens */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    z-index: 1000;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Overlay Menu */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark overlay */
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.overlay-content a {
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.overlay-content a:hover {
+    color: #f1f1f1;
+}
+
+/* Regular Navbar Links (for desktop) */
+.navbar-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Mobile-Specific Styles */
+@media (max-width: 768px) {
+    /* Show the hamburger menu on small screens */
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    /* Hide regular navbar links on small screens */
+    .navbar-links {
+        display: none !important;
+    }
+
+    /* Overlay styles for mobile */
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        z-index: 999;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .overlay-content a {
+        padding: 10px;
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Open overlay when hamburger is clicked */
+    .overlay.open {
+        width: 100%;
+    }
+}
+
+/* Open the overlay when clicked */
+.overlay.open {
+    width: 100%;
+}
+
+/* Style for closing hamburger menu (transform to X) */
+.hamburger.open span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
