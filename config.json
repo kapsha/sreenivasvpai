@@ -1,0 +1,26 @@
+{
+    "siteInfo": {
+        "title": "Advocate John Doe",
+        "subtitle": "Your Trusted Legal Advisor in Kerala, India"
+    },
+    "services": [
+        {
+            "name": "Civil Litigation",
+            "description": "We represent clients in civil lawsuits involving personal and commercial disputes, ensuring that your rights are upheld in the court of law."
+        },
+        {
+            "name": "Family Law",
+            "description": "From divorce to child custody, we provide compassionate legal advice and representation in all matters of family law."
+        },
+        {
+            "name": "Property Disputes",
+            "description": "Resolving property-related conflicts, including ownership disputes, property transfers, and land title issues with legal expertise."
+        }
+    ],
+    "theme": {
+        "primaryColor": "#333333",
+        "secondaryColor": "#000000",
+        "backgroundColor": "#f9f9f9", 
+        "textColor": "#333333" 
+    }
+}

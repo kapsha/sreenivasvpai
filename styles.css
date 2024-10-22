@@ -1,10 +1,31 @@
+:root {
+    --primary-color: #2E8B57; /* Default value */
+    --secondary-color: #006400; /* Default value */
+    --background-color: #f9f9f9;
+    --text-color: #333;
+}
+
 /* General Body Styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
-    color: #333;
+    font-family: 'Lato', sans-serif; /* Elegant and modern font */
+    font-size: 16px;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);    
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif; /* Bold and refined for headings */
+    letter-spacing: 0.05em; /* Slight spacing for a more professional look */
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.8; /* Increased for better readability */
+    margin-bottom: 20px;
 }
 
 /* Container Styling for Layout */
@@ -17,10 +38,10 @@ body {
 
 /* Header Styles */
 .header {
-    background-color: #2E8B57;
-    color: white;
     text-align: center;
     padding: 20px 0;
+    background-color: var(--primary-color);
+    color: white;
 }
 
 .header h1 {
@@ -35,7 +56,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
-    background-color: #006400;
+    background-color: var(--secondary-color);
     padding: 10px 0;
     text-align: center;
 }
@@ -72,7 +93,7 @@ body {
 
 .about-section h2 {
     font-size: 2em;
-    color: #2E8B57; /* Use the green theme color */
+    color: var(--primary-color);
     margin-bottom: 20px; /* Space below the heading */
 }
 
@@ -118,7 +139,7 @@ body {
     text-align: left; /* Align headings to the left */
     margin-bottom: 20px;
     font-size: 1.8em;
-    color: #2E8B57;
+    color: var(--primary-color);
     margin-left: 0; /* Ensure headings are aligned with the form */
 }
 
@@ -146,7 +167,7 @@ body {
 
 /* Button Styling */
 button[type="submit"] {
-    background-color: #2E8B57;
+    background-color: var(--primary-color);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -182,12 +203,12 @@ button[type="submit"]:hover {
 }
 
 .case-results li strong {
-    color: #2E8B57;
+    color: var(--primary-color);
 }
 
 /* Footer Styles */
 .footer {
-    background-color: #2E8B57;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -271,7 +292,7 @@ button[type="submit"]:hover {
     text-align: left;
     font-size: 2em;
     margin-bottom: 20px;
-    color: #2E8B57;
+    color: var(--primary-color);
 }
 
 /* Grid Layout for Services */
@@ -292,7 +313,7 @@ button[type="submit"]:hover {
 .service-item h3 {
     margin-top: 0;
     font-size: 1.5em;
-    color: #2E8B57;
+    color: var(--primary-color);    
 }
 
 .service-item p {
@@ -310,7 +331,7 @@ button[type="submit"]:hover {
     text-align: left;
     font-size: 2em;
     margin-bottom: 20px;
-    color: #2E8B57;
+    color: var(--primary-color);
 }
 
 .contact-section {
@@ -319,11 +340,16 @@ button[type="submit"]:hover {
     text-align: left;
 }
 
+.contact-section p {
+    margin-bottom: 5px; /* Reduce space between lines */
+    line-height: 1.1;   /* Slightly more compact line spacing */
+}
+
 .contact-section h2 {
     text-align: left;
     font-size: 2em;
-    margin-bottom: 20px;
-    color: #2E8B57;
+    margin-bottom: 15px;
+    color: var(--primary-color);
 }
 
 /* Carousel Container for Horizontal Scrolling */
@@ -355,7 +381,8 @@ button[type="submit"]:hover {
 .testimonial-item h4 {
     font-size: 1.1em;
     font-weight: bold;
-    color: #2E8B57;
+    color: var(--primary-color);
+    
 }
 
 /* Hide Scrollbar for a Cleaner Look */
