@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Advocate John Doe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="menu.js"></script>
+    <script src="configLoader.js"></script> <!-- Add this line -->
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Admin Dashboard</h1>
+        </div>
+    </header>
+
+    <div data-include-html="navbar.html"></div>
+
+    <main>
+        <div class="container">
+            <h2>Manage Cases</h2>
+            <div class="admin-actions">
+                <button onclick="location.href='add-case.html'">Add New Case</button>
+                <button onclick="location.href='update-case.html'">Update Existing Case</button>
+                <button onclick="location.href='search-case.html'">Search Case</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Advocate John Doe. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
