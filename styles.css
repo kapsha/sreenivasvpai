@@ -251,13 +251,6 @@ button[type="submit"]:hover {
         width: 100%; /* Full-width button on smaller screens */
     }
 
-    .services-grid {
-        grid-template-columns: 1fr; /* 1 column for smaller screens */
-    }
-
-    .service-item {
-        padding: 15px;
-    }
     .testimonial-item {
         min-width: 250px;  /* Smaller width for mobile */
         max-width: 250px;
@@ -321,6 +314,27 @@ button[type="submit"]:hover {
     line-height: 1.6;
 }
 
+/* Responsive Adjustment for Smaller Screens */
+@media (max-width: 767px) {
+    .services-grid {
+        grid-template-columns: 1fr; /* 1 column layout on small screens */
+        gap: 15px; /* Reduced gap for smaller screens */
+    }
+
+    .services-section h2 {
+        font-size: 1.75em; /* Slightly smaller heading for mobile */
+    }
+
+    .service-item h3 {
+        font-size: 1.25em; /* Reduced font size for mobile */
+    }
+
+    .service-item p {
+        font-size: 0.95em; /* Reduced paragraph font size for mobile */
+    }
+}
+
+
 /* Testimonials Section Styling */
 .testimonials-section {
     padding: 20px 0;
@@ -331,24 +345,6 @@ button[type="submit"]:hover {
     text-align: left;
     font-size: 2em;
     margin-bottom: 20px;
-    color: var(--primary-color);
-}
-
-.contact-section {
-    padding: 20px 0;
-    background-color: #f9f9f9;
-    text-align: left;
-}
-
-.contact-section p {
-    margin-bottom: 5px; /* Reduce space between lines */
-    line-height: 1.1;   /* Slightly more compact line spacing */
-}
-
-.contact-section h2 {
-    text-align: left;
-    font-size: 2em;
-    margin-bottom: 15px;
     color: var(--primary-color);
 }
 
@@ -393,4 +389,131 @@ button[type="submit"]:hover {
 .testimonials-carousel {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+}
+
+.contact-section {
+    padding: 1.5rem; /* Slightly reduced overall padding */
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; /* Reduced space below main heading */
+}
+
+.contact-section h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem; /* Reduced space below subheadings */
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem; /* Minimized gap between contact items */
+    margin-bottom: 1rem; /* Reduced space between contact details and form */
+}
+
+.contact-item h3 {
+    font-size: 1rem;
+    margin-bottom: 0.1rem; /* Reduced space below each item heading */
+    color: #333;
+}
+
+.contact-item p,
+.contact-item a {
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.2; /* Slightly tighter line height */
+    margin: 0; /* Removed default margin for tighter spacing */
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Reduced gap between form elements */
+}
+
+.contact-form label {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.2rem; /* Minimal space below labels */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.6rem; /* Reduced padding in inputs for a more compact form */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 0.6rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+    .contact-section {
+        padding: 1rem; /* Reduced padding on mobile */
+    }
+
+    .contact-section h2,
+    .contact-section h3 {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 0.4rem; /* Further reduced spacing on mobile */
+    }
+
+    .contact-details {
+        gap: 0.2rem; /* Minimal gap on mobile */
+        margin-bottom: 0.8rem;
+    }
+
+    .contact-item h3 {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    .contact-item p,
+    .contact-item a {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .contact-form label {
+        font-size: 0.8rem;
+        margin-bottom: 0.1rem; /* Minimal space below labels on mobile */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+        padding: 0.5rem; /* Reduced padding on inputs for mobile */
+    }
+
+    .contact-form button {
+        font-size: 0.95rem;
+        padding: 0.6rem;
+    }
 }

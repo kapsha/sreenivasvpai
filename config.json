@@ -1,20 +1,20 @@
 {
     "siteInfo": {
-        "title": "Advocate John Doe",
-        "subtitle": "Your Trusted Legal Advisor in Kerala, India"
+        "title": "Pai & Associates Advocates & Solicitors",
+        "subtitle": "Empowering Voices, Enhancing Lives"
     },
     "services": [
         {
-            "name": "Civil Litigation",
-            "description": "We represent clients in civil lawsuits involving personal and commercial disputes, ensuring that your rights are upheld in the court of law."
+            "name": "Services to Banks & FIs",
+            "description": "We offer a comprehensive range of legal services designed to support informed and secure lending decisions. Our expertise includes preparing detailed legal scrutiny reports for loans, verifying title deeds, and conducting thorough analyses of revenue records. We also provide accurate property valuations and assess potential risks, ensuring that all necessary factors are considered. In cases requiring recovery, we support timely and efficient legal recovery processes to safeguard our clients' interests."
         },
         {
-            "name": "Family Law",
-            "description": "From divorce to child custody, we provide compassionate legal advice and representation in all matters of family law."
+            "name": "Civil Litigation",
+            "description": "Our firm offers dedicated representation in a wide array of civil disputes, from personal matters to complex commercial cases. We meticulously prepare each case, utilizing strategic insights to safeguard your rights and interests. With clear guidance and a results-driven approach, we work to achieve a favorable outcome for you in court."
         },
         {
             "name": "Property Disputes",
-            "description": "Resolving property-related conflicts, including ownership disputes, property transfers, and land title issues with legal expertise."
+            "description": "We specialize in resolving intricate property disputes, including ownership conflicts, property transfers, and land title issues. Our experienced team thoroughly examines every detail to protect your property rights and provide the clarity you need. Whether defending family assets or managing commercial property matters, we ensure your interests are expertly represented, bringing peace of mind to every client."
         }
     ],
     "theme": {
